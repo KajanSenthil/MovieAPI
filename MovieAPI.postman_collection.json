@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "79da8db8-38e1-4a74-8225-43d8c72a9a84",
+		"name": "MovieAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MetaDataById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/metadata/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"metadata",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MetaDataByInvalidId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/metadata/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"metadata",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MovieStats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/movies/stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"movies",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MetaDataPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"movieId\": 3,\r\n        \"title\": \"Elysium\",\r\n        \"language\": \"AR\",\r\n        \"duration\": \"01:49:00\",\r\n        \"releaseYear\": 2013\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/metadata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"metadata"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
