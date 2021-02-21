@@ -9,8 +9,6 @@ namespace MovieAPI.Controllers
     [ApiController]
     public class MetaDataController : ControllerBase
     {
-        //private readonly IMovieService _movieService;
-
         public MetaDataController(IMovieService movieService)
         {
             MovieService = movieService;
