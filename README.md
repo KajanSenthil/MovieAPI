@@ -7,3 +7,5 @@ The port number has been used for this is 5000.
 Data folder contains the provided csv files.
 
 CsvHelper has been used for Reading CSV files. More details can be found in https://joshclose.github.io/CsvHelper/
+
+When you run the solution please run the attached post man collection to test the API.
